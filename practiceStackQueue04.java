@@ -1,11 +1,9 @@
 package PROGRAMMERS;
 
-//프로그래머스 코딩테스트 연습 / 스택&큐 / 주식가격
+//프로그래머스 코딩테스트 연습 / 스택&큐 / 주식가격 - 이중 for문 사용
 public class practiceStackQueue04 {
 
-	public static void main(String[] args) {
-		int[] prices = {5,8,6,2,4,1};
-		//int[] prices = {1,2,3,2,3};
+	public int[] solution(int[] prices) {
 		int N = prices.length;
 		int[] answer = new int[N];
 		for (int i = 0; i < N-1; i++) {
@@ -24,7 +22,7 @@ public class practiceStackQueue04 {
 				}
 			}
 		}
-		for(int i : answer) System.out.print(i+" ");
+		return answer;
 	}
 
 }
