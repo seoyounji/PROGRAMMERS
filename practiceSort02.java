@@ -17,6 +17,7 @@ public class practiceSort02 {
 				return (o2+o1).compareTo(o1+o2);
 			}
 		});
+		//Arrays.sort(result, (o1,o2) -> (o2+o1).compareTo(o1+o2));
 		String answer = "";
 		if(result[0].equals("0")) answer = "0";
 		else {
